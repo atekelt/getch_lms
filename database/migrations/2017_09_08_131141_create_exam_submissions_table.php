@@ -20,7 +20,7 @@ class CreateExamSubmissionsTable extends Migration
             $table->integer('answer_file_id');
             $table->double('total_mark',5,3)->default(0.00);
             $table->double('achieve_mark',5,3)->default(0.00);
-            $table->double('passed_score',5,3)->default(0.00);
+            $table->double('passed_score')->default(0.00);
             $table->tinyInteger('result_status');
             $table->timestamps();
 
